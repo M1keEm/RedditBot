@@ -24,7 +24,7 @@ else:
 
 # Get the top 5 values from our subreddit
 subreddit = reddit.subreddit('pythonforengineers')
-for submission in subreddit.hot(limit=10):
+for submission in subreddit.hot(limit=5):
     # print(submission.title)
 
     # If we haven't replied to this post before
