@@ -35,7 +35,14 @@ for submission in subreddit.hot(limit=5):
             # Reply to the post
             submission.reply("Manual bot test")
             print("Bot replying to : ", submission.title)
-
+            print("Bot replying to url: ", submission.url)
+            print("Bot replying to id: ", submission.id)
+            print("Bot replying to author: ", submission.author)
+            print("Bot replying to author id: ", submission.author.id)
+            print("Bot replying to author name: ", submission.author.name)
+            print("Bot replying to author fullname: ", submission.author.fullname)
+            print("Text:", submission.selftext)
+            print("Score:", submission.score)
             # Store the current id into our list
             posts_replied_to.append(submission.id)
 
